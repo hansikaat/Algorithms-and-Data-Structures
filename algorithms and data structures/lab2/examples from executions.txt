@@ -1,0 +1,121 @@
+examples from executions:
+QUESTION01
+----------
+
+enter the size of input: 
+6
+enter integer 1:
+1
+enter integer 2:
+2
+4enter integer 3:
+
+enter integer 4:
+3
+enter integer 5:
+5
+enter integer 6:
+0
+is sorted? false
+sorted array: 
+0 
+1 
+2 
+3 
+4 
+5 
+
+QUESTION02
+----------
+enter the size of input: 
+6
+enter integer 1:
+1
+enter integer 2:
+2
+enter integer 3:
+4
+enter integer 4:
+3
+enter integer 5:
+5
+enter integer 6:
+0
+is sorted? false
+sorted array: 
+5 
+4 
+3 
+2 
+1 
+0 
+
+QUESTION03
+----------
+
+enter the size of input: 
+6
+enter integer 1:
+1
+enter integer 2:
+2
+enter integer 3:
+4
+enter integer 4:
+3
+enter integer 5:
+5
+enter integer 6:
+0
+is sorted? false
+number of swaps: 6
+sorted array: 
+5 
+4 
+3 
+2 
+1 
+0 
+
+QUESTION04
+----------
+enter the size of input: 
+6
+enter integer 1:
+1
+enter integer 2:
+2
+enter integer 3:
+4
+enter integer 4:
+3
+enter integer 5:
+5
+enter integer 6:
+0
+is sorted? false
+[0, 1], [1, 2]
+[0, 1], [2, 4]
+[0, 1], [3, 3]
+[0, 1], [4, 5]
+[1, 2], [2, 4]
+[1, 2], [3, 3]
+[1, 2], [4, 5]
+[2, 4], [4, 5]
+[3, 3], [4, 5]
+number of inversions: 9
+sorted array: 
+5 
+4 
+3 
+2 
+1 
+0 
+
+QUESTION05
+----------
+-8 -9 1 2 
+
+QUESTION07
+----------
+[1, 2, 3, 4]

@@ -1,0 +1,20 @@
+Binary Search Tree
+1. Add O to the right of H (O>H)
+2. Add C to the left of H (C<H)
+3. Add E to the right of C (E<H and E>C)
+4. Add L to the left of O (L>H and L<O)
+5. Add W to the right of O (W>H and W>O)
+
+Reb Black Tree
+1. As O is greater than H attach new node with red link to the right
+2. rotate this red link to left to make a legal node. So now O is at the root
+3. As C is less than H, add a red link to the left of H. It gives a 4 node. 
+4. Split the four node 	and flip the colours of the links to black
+5. Add E as a red link to the right of E as it is less than H and greater than C
+6. But the link is leaned in the wrong way. Therefore do a left rotation
+7. A is less than C, therefore add a red link to the left
+8. There are two left links in a row, therefore rotate right and flip the colours of the link
+9. Add L to the left of O as a red link
+10. Add W to the right of O as a red link
+11. As both the children of O are red, flip the colours
+12. As both the children of H are red, flip the colours

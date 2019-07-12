@@ -1,0 +1,67 @@
+Theory
+8)	The list below is partially ordered by insertion sort up until 5. How many comparisons and swaps are needed to sort the 5?
+[1 3 4 8 9 5 2]
+Answer:
+Three comparisons, two swaps
+According to insertion sort algorithm, the comparison and swapping are as follows:
+1.	Compare 5 and 9, swap 5 and 9 as 5<9
+New array: [1 3 4 8 5 9 2]
+2.	Compare 5 and 8, swap 5 and 8 as 5<8
+New array: [1 3 4 5 8 9 2]
+3.	Compare 5 and 4, no swapping 5 and 8 as 5>4
+New array: [1 3 4 5 8 9 2]
+
+
+9)	The following array is the partial result of a sorting algorithm after the i'th iteration. 
+[1   2   3   4   0  6  2  5  7  8  9] 
+What could be the i and the algorithm (selection, insertion or shellsort)? 
+Answer:
+i=3, Insertion algorithm
+Insertion algorithm format:
+for (int i = 1; i < array.length; i++)
+   { 
+     for (int j = i; j > 0 && less(a[j], a[j-1]); j--)
+     exch(a, j, j-1);
+   }
+
+The first four elements of the array is sorted as the outer loop has iterated three times. Therefore i=3
+As the iteration happens from left to right in insertion sort the first elements should be sorted before it reaches the end of the array
+Thus by looking at the array above, it could be realized that insertion sort is used.
+
+10)	Which method runs faster for each of the following items, selection sort or insertion sort?
+Answer:
+a) array with all keys identical 
+Insertion sort is faster
+Although the keys are identical, selection sort conducts N^2/2 comparisons
+However, for insertion algorithm, the number of comparisons for this case is N-1
+Therefore as selection sort is quadratic and insertion sort is linear, insertion sort could be considered as the fastest in this case
+
+b) sorted array
+Although the array is sorted, selection sort conducts N^2/2 comparisons
+However, for insertion algorithm, the number of comparisons for the best case is N-1
+Therefore as selection sort is quadratic and insertion sort is linear, insertion sort could be considered as the fastest in this case
+
+c) array in reverse order
+Selection algorithm is faster
+The worst case of inserion algorithm is N^2/2 compares and N^2/2 exchanges
+But selection algorithm uses N^2/2 compares and N exchanges to sort this array
+As the number of exhnages is lesser for selection sort, it is the fastest 
+ 
+      
+11)	Consider the following partially sorted array by shell sort, for which h is it sorted? 
+[10   25   20   35   30   45]
+Answer:
+In this shellsort it could be assumed that h is initialized as h=1.
+Then, use N/3 for increment sequence and therefore the h = 3*1+1=4
+Thus the 10 and 30 values are expected as sorted
+According to the shell sort algorithm the next step is h=h/3
+Hence new h=4/3 is approximately two
+As the gap is two, following swaps are expected:
+10 and 20
+25 and 35
+20 and 30
+Then new h=2/3 which is approximately one
+As the gap is one, following swap is expected:
+10 and 25
+
+Threfore the array is sorted for h=3, 2 and 1
